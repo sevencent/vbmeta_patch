@@ -50,7 +50,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         body: |
           Your vbmeta image are now ready!
-          Flash it now.
+          Flash it now. Make Sure You're Bootloader is properly unlocked
 
     - name: Link to Release
       run: |
