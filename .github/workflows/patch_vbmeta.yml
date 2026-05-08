@@ -30,11 +30,11 @@ jobs:
       run: |
         uname -a
         
-    - name: Patch File Information
+    - name: Patch File Information        
       run: |
         file ${{ github.event.inputs.ARCHITECTURE }}/vbmeta-disable-verification
         
-    - name: Give Permissio and Run Patch
+    - name: Give Permission and Run Patch
       run: |
         chmod +x ${{ github.event.inputs.ARCHITECTURE }}/vbmeta-disable-verification
         ./${{ github.event.inputs.ARCHITECTURE }}/vbmeta-disable-verification vbmeta.img
